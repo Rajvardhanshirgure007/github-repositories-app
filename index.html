@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Fyle.css">
+    <title>GitHub Repositories</title>
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Repositories</h1>
+        <label for="username">Enter GitHub Username:</label>
+            
+
+    <input type="text" id="username" placeholder="Enter GitHub Username">
+
+        
+        <div class="options">
+            <label for="perPage">Repositories Per Page:</label>
+            <select id="perPage">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+
+            <label for="search">Search Repositories:</label>
+            <input type="text" id="search" placeholder="Search...">
+
+            <button onclick="getRepositories()">Get Repositories</button>
+        </div>
+
+        <div id="repositories"></div>
+        <div id="loader" class="loader"></div>
+    </div>
+    <script src="Fyle.js"></script>
+</body>
+</html>
